@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 1rem;
+}
+ul{
+    background-color: rebeccapurple;
+    list-style-type: none;
+    height: 50vh;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    /* !flex direction column olduğunda yatay ve dikey yer değiştirir yani justify -content yatayda hizalarken dikey hizalama yapmaya başalr bunu diğer durumuda align items da dikeyde çalışırken yatayda çalışmaua başlar. */
+    justify-content: center;
+    align-items: center;
+   
+    flex-wrap: wrap;
+    gap: 1rem ;
+    /* justify-content: center; elemanları ortalar */
+   /*  justify-content: flex-start; elamanları taşıyıcının başına yaslar */
+   /* justify-content: flex-end; * elemanları taşıyıvcının sonuna yaslar/
+  /*  justify-content: space-between;elemanları taşıyıcıda eşit olarak dağıtır fakat burada 1. ve sonuncu elemanı başa gönderir baştaki boşluk padding den kaynaklı. */
+ /*  justify-content: space-around; bşta ve sonda 1br lik boşluk bırakırken ortada 2 br lik boşluklar bırakır. */
+ /*justify-content: space-evenly; elamanları eşit olarak dağıtır. */
+ /* ? dikeyde hizlzmak için taşıyıcıya bir yükseklik verilmesi gerekir. default olarak align item özelliği strech gelir. */
+/*  align-items: center; */
+/* align-items: flex-end */
+/* align-items: flex-start */
+/* justify-content: center; */
+/* align-items: center; */
+
+
+}
+ul *{
+    background-color: fuchsia;
+    
+
+}
+ul li{
+    border-radius: 10px;
+    padding: 1rem;
+    border: 2px solid purple;
+}
+
+ol{
+    background-color: olive;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.right{
+    background-color: yellow;
+    width: 60%;
+
+}
+.left{
+background-color: orange;
+width: 40%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+/* gap: 1rem; */
+}
