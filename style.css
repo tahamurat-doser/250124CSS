@@ -1,180 +1,208 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    padding: 1rem;
+body {
+  padding: 1rem;
 }
-ul{
-    background-color: rebeccapurple;
-    list-style-type: none;
-    height: 50vh;
-    padding: 8px;
-    display: flex;
-    flex-direction: row;
-    /* flex-direction: column; */
-    /* !flex direction column olduğunda yatay ve dikey yer değiştirir yani justify -content yatayda hizalarken dikey hizalama yapmaya başalr bunu diğer durumuda align items da dikeyde çalışırken yatayda çalışmaua başlar. */
-    justify-content: center;
-    align-items: center;
-   
-    flex-wrap: wrap;
-    gap: 1rem ;
-    /* justify-content: center; elemanları ortalar */
-   /*  justify-content: flex-start; elamanları taşıyıcının başına yaslar */
-   /* justify-content: flex-end; * elemanları taşıyıvcının sonuna yaslar/
+ul {
+  background-color: rebeccapurple;
+  list-style-type: none;
+  height: 50vh;
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: column; */
+  /* !flex direction column olduğunda yatay ve dikey yer değiştirir yani justify -content yatayda hizalarken dikey hizalama yapmaya başalr bunu diğer durumuda align items da dikeyde çalışırken yatayda çalışmaua başlar. */
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  gap: 1rem;
+  /* justify-content: center; elemanları ortalar */
+  /*  justify-content: flex-start; elamanları taşıyıcının başına yaslar */
+  /* justify-content: flex-end; * elemanları taşıyıvcının sonuna yaslar/
   /*  justify-content: space-between;elemanları taşıyıcıda eşit olarak dağıtır fakat burada 1. ve sonuncu elemanı başa gönderir baştaki boşluk padding den kaynaklı. */
- /*  justify-content: space-around; bşta ve sonda 1br lik boşluk bırakırken ortada 2 br lik boşluklar bırakır. */
- /*justify-content: space-evenly; elamanları eşit olarak dağıtır. */
- /* ? dikeyde hizlzmak için taşıyıcıya bir yükseklik verilmesi gerekir. default olarak align item özelliği strech gelir. */
-/*  align-items: center; */
-/* align-items: flex-end */
-/* align-items: flex-start */
-/* justify-content: center; */
-/* align-items: center; */
-/* align-items: baseline; içeriklerden orlama yapıyor */
-align-items: baseline;
-
+  /*  justify-content: space-around; bşta ve sonda 1br lik boşluk bırakırken ortada 2 br lik boşluklar bırakır. */
+  /*justify-content: space-evenly; elamanları eşit olarak dağıtır. */
+  /* ? dikeyde hizlzmak için taşıyıcıya bir yükseklik verilmesi gerekir. default olarak align item özelliği strech gelir. */
+  /*  align-items: center; */
+  /* align-items: flex-end */
+  /* align-items: flex-start */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* align-items: baseline; içeriklerden orlama yapıyor */
+  align-items: baseline;
 }
-ul *{
-    background-color: fuchsia;
-    
-
+ul * {
+  background-color: fuchsia;
 }
-ul li{
-    border-radius: 10px;
-    padding: 1rem;
-    border: 2px solid purple;
+ul li {
+  border-radius: 10px;
+  padding: 1rem;
+  border: 2px solid purple;
 }
 
-ol{
-    background-color: olive;
-    padding: 2rem;
-    display: flex;
-    justify-content: space-between;
+ol {
+  background-color: olive;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
 }
-.right{
-    background-color: yellow;
-    width: 60%;
-
+.right {
+  background-color: yellow;
+  width: 60%;
 }
-.left{
-background-color: orange;
-width: 40%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-/* gap: 1rem; */
+.left {
+  background-color: orange;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 1rem; */
 }
 .align-content {
-    background-color: aqua;
-    display: flex;
-    height: 40vh;
-    justify-content: center;
-    /* align-items: center; */
-    /* align-content: center; grup olarak değerlendirip ortalar */
-    /* align-content: flex-end;  grup olarak değerlendirip sona alır*/
-    /* align-content: flex-start; */
-    gap: 1rem;
-    flex-wrap: wrap;
+  background-color: aqua;
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  /* align-items: center; */
+  /* align-content: center; grup olarak değerlendirip ortalar */
+  /* align-content: flex-end;  grup olarak değerlendirip sona alır*/
+  /* align-content: flex-start; */
+  gap: 1rem;
+  flex-wrap: wrap;
 }
-.align-content h2{
-    background-color: blue;
-    padding: 1rem;
-    border-radius: 10px;
+.align-content h2 {
+  background-color: blue;
+  padding: 1rem;
+  border-radius: 10px;
 }
-.li1{
-order: 2;
-padding: 2rem 0;
-
+.li1 {
+  order: 2;
+  padding: 2rem 0;
 }
-.li2{
-order: 3;
-padding: 3rem 0rem;
+.li2 {
+  order: 3;
+  padding: 3rem 0rem;
 }
-.li3{
-order: 5;
-padding: 4rem 0;
-width: 5rem;
-text-align: center;
+.li3 {
+  order: 5;
+  padding: 4rem 0;
+  width: 5rem;
+  text-align: center;
 }
-.li4{
-order: 1;
-padding: 1rem 0;
+.li4 {
+  order: 1;
+  padding: 1rem 0;
 }
-.li5{
-
-order: 0;
-padding: 0rem ;
+.li5 {
+  order: 0;
+  padding: 0rem;
 }
 /* order özelliği akışta sıralamaya yarıyor. verdiğimiz order sırası büyük olan sona gidiyor. default olarak order 0 geliyor. */
-.container{
-    background-color: purple;
-    margin-top: 20px;
-    padding: 1rem;
-    display: flex;
-    /* justify-content: center; */
-   /*  align-items: center; */
-    gap: 1rem;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
+.container {
+  background-color: purple;
+  margin-top: 20px;
+  padding: 1rem;
+  display: flex;
+  /* justify-content: center; */
+  /*  align-items: center; */
+  gap: 1rem;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
 }
-.container *{
-    background-color: orange;
-    height: 50px;
-    text-align: center;
+.container * {
+  background-color: orange;
+  height: 50px;
+  text-align: center;
 }
-header{
-flex-basis: 100%;
-display: flex;
-/* justify-content: center;
+.container header {
+  flex-basis: 100%;
+  display: flex;
+  /* justify-content: center;
 align-items: center; */
 }
-aside{
-/* flex-basis: 20%; */
-flex-grow: 1;
+.container aside {
+  /* flex-basis: 20%; */
+  flex-grow: 1;
 }
-main{
-/* flex-basis: 50%; */
-flex-grow: 5;
+.container main {
+  /* flex-basis: 50%; */
+  flex-grow: 5;
 }
-article{
-   /*  flex-basis: 20%; */
-   flex-grow: 1;
+.container article {
+  /*  flex-basis: 20%; */
+  flex-grow: 1;
 }
-footer{
-flex-basis: 100%;
-}/* flex-basis display flex yaptığımız kısımdaki items ların kalan alanda ne kadar yer kaplayacağını belirtir. */
+.container footer {
+  flex-basis: 100%;
+} /* flex-basis display flex yaptığımız kısımdaki items ların kalan alanda ne kadar yer kaplayacağını belirtir. */
 /* flex grow da büyüme oranını belirler birim olarak çalışır ve  */
-.shrink{
-    background-color: darkgoldenrod;
-    margin-top: 10px;
-    display: flex;
-    /* flex-wrap: wrap; */
-
+.shrink {
+  background-color: darkgoldenrod;
+  margin-top: 10px;
+  display: flex;
+  /* flex-wrap: wrap; */
 }
-.shrink *{
-   /*  width: 200px; */
-    height: 100px;
+.shrink * {
+  /*  width: 200px; */
+  height: 100px;
 }
-.box1{
-    background-color: red;
+.box1 {
+  background-color: red;
   /*   flex-grow: 1;
     flex-shrink: 0; */
-    flex: 1 1 0;
-
-
+  flex: 1 1 0;
 }
-.box2{
-background-color: green;
-/* flex-grow: 1;
+.box2 {
+  background-color: green;
+  /* flex-grow: 1;
 flex-shrink: 5; */
-flex: 1 1 0;
+  flex: 1 1 0;
 }
-.box3{
-background-color: blue;
-/* flex-grow: 1;
+.box3 {
+  background-color: blue;
+  /* flex-grow: 1;
 flex-shrink: 1; */
-flex: 1 1 0;/* ! felex tek yazdığımız değer olarak birimsiz bir değer girdiğimizde bunu grow olarak kabul eder, flex basis 0 olur tek değer var ama birim de ver di isek basis kabul eder, eğer 2 değer varsa biri birimli diğeri birimsiz ise birimsiz olan grow diğeri baisiolur, 3 değer varsa.  */
+  flex: 1 1 0; /* ! felex tek yazdığımız değer olarak birimsiz bir değer girdiğimizde bunu grow olarak kabul eder, flex basis 0 olur tek değer var ama birim de ver di isek basis kabul eder, eğer 2 değer varsa biri birimli diğeri birimsiz ise birimsiz olan grow diğeri baisiolur, 3 değer varsa.  */
 }
-/* flex-shrink: 1;bu özellik ,ile küçülme oranını belirleriz, daha çok küçülmesini istemediğimiz logaları ayarlarken kullanırız. */
+/* flex-shrink: 1;bu özellik 
+,ile küçülme oranını belirleriz, daha çok küçülmesini istemediğimiz logaları ayarlarken kullanırız. */
+.container2{
+    margin-top: 20px;
+    background-color: purple;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.container2 *{
+    background-color: orange;
+    height: 50px;
+
+}
+.container2 header {
+    width: 100%;
+    background-image: url("https://picsum.photos/id/674/555/456");
+    background-size: contain;
+}
+.container2 aside {
+   /*  width: calc((33.333%) - (2rem/3)); */
+   width: 20%;
+}
+.container2 main {
+  /*   width: calc((33.333%) - (2rem/3)); */
+  width: 50%;
+}
+.container2 article {
+   /*  width: calc((33.333%) - (2rem/3)); */
+   width: 20%;
+}
+.container2 footer {
+    width: 100%;
+}
+/* calc() fonsiyonu ile boşluklardan mesafeyi ayarladık. 1rem lik pedding vermiştik toplam toplamda 2rem oldu % 33.333 den 2rem/3 çıkardık */
