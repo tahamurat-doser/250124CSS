@@ -12,7 +12,8 @@ ul{
     height: 50vh;
     padding: 8px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /* flex-direction: column; */
     /* !flex direction column olduğunda yatay ve dikey yer değiştirir yani justify -content yatayda hizalarken dikey hizalama yapmaya başalr bunu diğer durumuda align items da dikeyde çalışırken yatayda çalışmaua başlar. */
     justify-content: center;
     align-items: center;
@@ -64,3 +65,41 @@ align-items: center;
 justify-content: space-between;
 /* gap: 1rem; */
 }
+.align-content {
+    background-color: aqua;
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: center; grup olarak değerlendirip ortalar */
+    /* align-content: flex-end;  grup olarak değerlendirip sona alır*/
+    /* align-content: flex-start; */
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.align-content h2{
+    background-color: blue;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.li1{
+order: 2;
+
+}
+.li2{
+order: 3;
+
+}
+.li3{
+order: 5;
+
+}
+.li4{
+order: 1;
+
+}
+.li5{
+
+order: 0;
+}
+/* order özelliği akışta sıralamaya yarıyor. verdiğimiz order sırası büyük olan sona gidiyor. default olarak order 0 geliyor. */
