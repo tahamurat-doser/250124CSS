@@ -44,7 +44,7 @@ nav .middle {
 nav .middle a{
     text-decoration: none;
     color: black;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 nav .right {
   background-color: gainsboro
@@ -57,4 +57,32 @@ nav .right {
 nav .right a{
     font-size: 2rem;
     color: black;
+}
+
+header{
+  background-color: bisque;
+  display: flex;
+  gap:1rem ;
+  margin-top: 50px;
+  padding: 20px;
+}
+.img{
+border: 2px solid red;
+flex: 1;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.text{
+  border: 2px solid red;
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  line-height: 2;
+}
+.img img{
+  width: 100%;
 }
